@@ -1,14 +1,14 @@
-import * as AFrame from "aframe";
+import * as AFRAME from "aframe";
 import * as ZapparAFrame from "@zappar/zappar-aframe";
 
-console.log("Using AFrame", AFrame.version);
+console.log("Using AFrame", AFRAME.version);
 console.log("Using ZapparAFrame", ZapparAFrame);
 
 window.addEventListener("load", setup);
 
 function setup() {
 
-    let myImageGroup = document.getElementById("image-group");
+    const myImageGroup = document.getElementById("image-group");
 
     let imageVisible = false;
 
@@ -25,5 +25,5 @@ function setup() {
             if (imageVisible === false) myImageGroup.setAttribute("visible", "false");
         }, 500)
     });
-    
+
 }
